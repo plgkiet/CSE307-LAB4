@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Webpage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="regis.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="lab3photo/logoABCbook.png" style="height: 100px; width: 300px">
+        </div>
+        <div id="login">
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i><a href="login.html"><b>Log in</b></a>
+            <a href="registration.html"><b>Registration</b></a>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i><a href="#"><b>Cart</b></a>
+        </div>
+    </header>
+    <nav>
+        <div id="menu">
+            <a href="homepage.html"><b>HOME PAGE</b></a>
+            <span> | </spa>
+                <a href="#"><b>INTRODUCTION</b></a>
+                <span> | </spa>
+                    <a href="#"><b>CONTACT</b></a>
+        </div>
+        <div id="form">
+            <input type="text" placeholder="Enter the title of the book..." style="width: 200px; height: 20px;">
+            <button name="Find Book" type="submit" value="Submit"> Find Books</button>
+        </div>
+    </nav>
+
+    <div id="body">
+        <article>
+
+            <aside id="left">
+                <div id="subject">
+                    <p><h3>BOOKS BY SUBJECTS</h3></p>
+                    <ul id="a">
+                        <li><a href="#">Foreign Language</a></li>
+                        <li><a href="#">Information Technology</a></li>
+                        <li><a href="#">Law</a></li>
+                        <li><a href="#">Literature</a></li>
+                        <li><a href="#">Science and Technology</a></li>
+                        <li><a href="#">Agriculture</a></li>
+                        <li><a href="#">History of Geography</a></li>
+                        <li><a href="#">Economics</a></li>
+                        <li><a href="#">Listen to the song</a></li>
+                    </ul>
+                </div>
+                <div id="publisher">
+                    <p><h3>BOOKS BY PUBLISHERS</h3></p>
+                    <ul id="b">
+                        <li><a href="#">Young Publishers</a></li>
+                        <li><a href="#">Statistics Pulishing House</a></li>
+                        <li><a href="#">Bronze Needle</a></li>
+                        <li><a href="#">National University</a></li>
+                        <li><a href="#">Artistic Craft Culture</a></li>
+                        <li><a href="#">Culture</a></li>
+                        <li><a href="#">History of Geography</a></li>
+                        <li><a href="#">Labor-Society</a></li>
+                        <li><a href="#">Science & Engineering</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <section>
+                <div id="new">
+                    <p><h3>MEMBER REGISTRATION</h3></p>
+                </div>
+                <div id="registration" >
+                    <form action="#" method="post">
+                        <fieldset id="info">
+                            <legend><b>Personal Information</b></legend>
+                            <table id="regis">
+                                <tr>
+                                    <td id="col1">Full name: </td>
+                                    <td><input id="name" type="text" name="fullname" required="required" ></td>
+                                </tr>
+                                <tr>
+                                    <td id="col1">Birhtday: </td>
+                                    <td style="text-align: left;">
+                                        <select name="birhtday" id="day">
+                                            <option value="1" selected="selected">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select>
+                                        <span>
+                                            Month
+                                        </span>
+                                        <select name="month" id="month">
+                                            <option value="1" selected="selected">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                        </select>
+                                        <span>Year</span>
+                                        <input id="year" type="text" name="year" required="required" >
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="col1">Gender: </td>
+                                    <td style="text-align: left;">
+                                        <input name="gender" type="radio" value="Male">Male
+                                        <input name="gender" type="radio" value="Female">Female
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="col1">Address: </td>
+                                    <td><textarea id="address" name="address" id="address" cols="30" rows="5"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td id="col1">Telephone: </td>
+                                    <td><input id="phone" type="text" name="phonenumber" required="required" ></td>
+                                </tr>
+                                <tr>
+                                    <td id="col1">Email: </td>
+                                    <td><input id="mail" type="text" name="email" required="required" ></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                        <fieldset id="credentials">
+                            <legend><b>Credentials</b></legend>
+                            <table id="cre">
+                                <tr>
+                                    <td id="col2">Username: </td>
+                                    <td><input id="user" type="text" name="username" required="required"></td>
+                                </tr>
+                                <tr>
+                                    <td id="col2">Password: </td>
+                                    <td><input id="pass1" type="password" name="password" required="required" ></td>
+                                </tr>
+                                <tr>
+                                    <td id="col2">Confirm Password: </td>
+                                    <td><input id="pass2" type="password" name="password" required="required" ></td>
+                                </tr> 
+                            </table>
+                        </fieldset>
+                        <div style="text-align: center;">
+                            <button  type="submit" value="Submit">Submit</button>
+                            <button type="reset" value="Reset">Reset</button>
+                        </div>     
+                    </form>                
+                </div>
+            </section>
+
+            <aside id="right">
+                <div id="bestseller">
+                    <p><h3>BESTSELLER</h3></p>
+                    <marquee direction="up" scrollamount="10" scrolldelay="10" onmousemove="stop()" onmouseout="start()" class="marquee">
+                        <p><a href="#"><img src="https://m.media-amazon.com/images/I/61ASc4NxA+L._AC_UF1000,1000_QL80_.jpg"
+                                    style="height: 200px; width: 150px;">English For Tech</a></p>
+                        <p><a href="#"><img src="https://m.media-amazon.com/images/I/71Vvhh9v62L._AC_UF1000,1000_QL80_.jpg"
+                                    style="height: 200px; width: 150px;">BARC Computer Science</a></p>
+                        <p><a href="#"><img src="lab3photo/Davinci.png" style="height: 200px; width: 150px;">The Davinci
+                                Code</a></p>
+                        <p><a href="#"><img src="lab3photo/harrypotter.png" style="height: 200px; width: 150px;">Harry
+                                Potter</a></p>
+                    </marquee>   
+                </div>
+                <div id="link">
+                    <p><h3>THE WEBSITE LINKS</h3><p></p>
+                    <div id="select">
+                        <select name="links" style=" font-size: 15px;" onchange="window.open(this.value, '_blank')">
+                            <option selected="selected">--- Select the linking page ---</option>
+                            <a href="https://lib.eiu.edu.vn/" target="_blank">
+                            <option>https://lib.eiu.edu.vn/</option>
+                            </a>
+                            <a href="https://eiu.edu.vn/" target="_blank">
+                            <option>https://eiu.edu.vn/</option>
+                            </a>
+                        </select>
+                    </div>  
+                </div>
+                <div id="access">
+                    <P><h3>ACCESS STATISTICS</h3></P>
+                    <div id="accessinfo">
+                        <P><B>Total Access: 500</B></P>
+                        <P><B>Online: 3</B></P>
+                    </div>
+                </div>
+            </aside>
+
+        </article>
+    </div>
+    <footer id="footer">
+        <p>Ⓒ2016 - ABC Bookstore. Allright Reserved</p>
+        <p>Website is developed to be used as a hands-on exercise in Web Programming</p>
+        <p>Email: abcbookstore@gmail.com</p>
+    </footer>
+</body>
+    
+
+
